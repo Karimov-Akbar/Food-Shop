@@ -1,0 +1,30 @@
+import './Sidebar.css'
+import avatar from '../../../shared/images/avatar.jpg'
+import menu from '../../../shared/icons/menu.svg'
+import cart from '../../../shared/icons/cart.svg'
+import profile from '../../../shared/icons/profile.svg'
+import logout from '../../../shared/icons/logout.svg'
+
+const Sidebar = () => {
+    return (
+        <>
+            <aside className="sidebar">
+                <div className="sidebar__content">
+                    <div className="sidebar__top">
+                        <img src={avatar} className='user__avatar' alt="Avatar" />
+                        <h1 className='user__info'>Акбар Каримов</h1>
+                        <a className='user__email' href="">akbar@gmail.com</a>
+                    </div>
+                    <div className="sidebar__links">
+                        <button className='sidebar__link'><img src={menu} alt="Menu" />Меню</button>
+                        <button className='sidebar__link'><img src={cart} alt="Cart" />Корзина</button>
+                        <button className='sidebar__link'><img src={profile} alt="Profile" />Профиль</button>
+                    </div>
+                    <button className='logout'><img src={logout} alt="Logout" />Выйти</button>
+                </div>
+            </aside>
+        </>
+    );
+}
+
+export default Sidebar;
