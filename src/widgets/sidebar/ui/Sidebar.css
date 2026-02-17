@@ -2,10 +2,11 @@
 @import '../../../app/styles/root.css';
 
 .sidebar {
-    width: 250px;
+    width: 240px;
     height: 100vh;
     padding: 30px;
     border-right: 1px solid #e0e0e0;
+    position: fixed;
 }
 
 .sidebar__content {
