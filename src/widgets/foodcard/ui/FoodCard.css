@@ -1,0 +1,82 @@
+@import '../../../app/styles/reset.css';
+@import '../../../app/styles/root.css';
+
+.foodcard{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 323px;
+    height: auto;
+    box-shadow: 18px 18px 36px 0 rgba(211, 209, 216, 0.25);
+    background: #fff;
+    border-radius: 18px;
+}
+
+.foodcard__collections{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foodcard__price{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 12px;
+    border-radius: 121px;
+    background: #fff;
+    box-shadow: 0 7px 28px 0 rgba(254, 114, 76, 0.2);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: #111719;
+}
+
+.foodcard__preview img{
+    width: 323px;
+    width: 100%;
+    height: 165px;
+    border-radius: 30px;
+    object-fit: contain;
+}
+
+.foodcard__cart{
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 5px 9px;
+    border-radius: 100%;
+    background: #fe724c;
+    box-shadow: 0 9px 18px 0 rgba(254, 114, 76, 0.4);
+}
+
+.foodcard__info{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.foodcard__info h2{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+}
+
+.foodcard__price span{
+    color: #fe724c;
+}
+
+.foodcard__info p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: #5b5b5e;
+    max-width: 290px;
+    width: 100%;
+}
