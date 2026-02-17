@@ -1,1 +1,12 @@
 @import './root.css';
+
+.app {
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    margin-left: 240px;
+    padding: 0 40px;
+}

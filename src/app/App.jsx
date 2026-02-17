@@ -1,12 +1,13 @@
 import Sidebar from "../widgets/sidebar/ui/Sidebar";
-// import Home from "../pages/home/ui/Home";
+import Menu from "../pages/home/ui/Menu";
+import './styles/index.css'
 
 const App = () => {
     return(
-        <>
+        <div className="app">
             <Sidebar/>
-            {/* <Home /> */}
-        </>
+            <Menu />
+        </div>
     );
 }
 
