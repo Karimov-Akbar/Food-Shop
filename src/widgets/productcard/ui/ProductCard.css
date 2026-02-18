@@ -52,6 +52,11 @@
     border-radius: 100%;
     background: #fe724c;
     box-shadow: 0 9px 18px 0 rgba(254, 114, 76, 0.4);
+    transition: 0.5s;
+}
+
+.productcard__cart:hover{
+    transform: scale(1.2);
 }
 
 .productcard__info{
