@@ -30,7 +30,7 @@ const Menu = () => {
                 </div>
             </header>
             <main className="main">
-                <section className='food__cards'>
+                <section className='product__cards'>
                     { products.map((product) => (
                         <ProductCard key={product.id} product={product} />
                     ))}
