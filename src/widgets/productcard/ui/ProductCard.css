@@ -1,7 +1,7 @@
 @import '../../../app/styles/reset.css';
 @import '../../../app/styles/root.css';
 
-.foodcard{
+.productcard{
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -12,14 +12,14 @@
     border-radius: 18px;
 }
 
-.foodcard__collections{
+.productcard__collections{
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.foodcard__price{
+.productcard__price{
     position: absolute;
     top: 12px;
     left: 12px;
@@ -33,7 +33,7 @@
     color: #111719;
 }
 
-.foodcard__preview img{
+.productcard__preview img{
     width: 323px;
     width: 100%;
     height: 165px;
@@ -42,7 +42,7 @@
     position: relative;
 }
 
-.foodcard__cart{
+.productcard__cart{
     width: 34px;
     height: 34px;
     cursor: pointer;
@@ -55,25 +55,25 @@
     box-shadow: 0 9px 18px 0 rgba(254, 114, 76, 0.4);
 }
 
-.foodcard__info{
+.productcard__info{
     padding: 12px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.foodcard__info h2{
+.productcard__info h2{
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 18px;
     color: #000;
 }
 
-.foodcard__price span{
+.productcard__price span{
     color: #fe724c;
 }
 
-.foodcard__info p{
+.productcard__info p{
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
@@ -82,7 +82,7 @@
     width: 100%;
 }
 
-.foodcard__rating{
+.productcard__rating{
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 12px;
@@ -96,7 +96,7 @@
     left: 15px;
 }
 
-.foodcard__rating img{
+.productcard__rating img{
     width: 10px;
     height: 10px;
 }

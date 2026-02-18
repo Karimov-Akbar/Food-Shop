@@ -2,7 +2,7 @@ import filter from '../../../shared/icons/filter.svg'
 import search from '../../../shared/icons/search.svg'
 import '../../../app/styles/index.css'
 import './Menu.css'
-import FoodCard from '../../../widgets/foodcard/ui/FoodCard'
+import ProductCard from '../../../widgets/productcard/ui/ProductCard'
 import { productsApi } from '../../../shared/api/products'
 import { useEffect, useState } from 'react'
 
@@ -32,7 +32,7 @@ const Menu = () => {
             <main className="main">
                 <section className='food__cards'>
                     { products.map((product) => (
-                        <FoodCard key={product.id} product={product} />
+                        <ProductCard key={product.id} product={product} />
                     ))}
                 </section>
             </main>
