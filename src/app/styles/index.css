@@ -10,3 +10,8 @@
     margin-left: 240px;
     padding: 0 40px;
 }
+
+html {
+    scrollbar-color: #fe724c transparent;
+    scrollbar-width: thin;
+}
