@@ -81,7 +81,7 @@
     width: 100%;
 }
 
-.productcard__rating{
+.rating{
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 12px;
@@ -95,7 +95,7 @@
     left: 15px;
 }
 
-.productcard__rating img{
+.rating img{
     width: 10px;
     height: 10px;
 }
