@@ -39,7 +39,6 @@
     height: 165px;
     border-radius: 30px;
     object-fit: contain;
-    position: relative;
 }
 
 .productcard__cart{
