@@ -1,8 +1,8 @@
 const ProductInfo = () => {
     return(
-        <>
-            
-        </>
+        <div className="container">
+
+        </div>
     );
 }
 

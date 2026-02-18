@@ -1,5 +1,5 @@
 import Sidebar from "../widgets/sidebar/ui/Sidebar";
-import Menu from "../pages/home/ui/Menu";
+import Menu from "../pages/menu/ui/Menu";
 import './styles/index.css'
 
 const App = () => {
