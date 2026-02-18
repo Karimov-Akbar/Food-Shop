@@ -16,7 +16,7 @@ const Sidebar = () => {
                         <a className='user__email' href="">akbar@gmail.com</a>
                     </div>
                     <div className="sidebar__links">
-                        <button className='sidebar__link'><img src={menu} alt="Menu" />Меню</button>
+                        <button className='sidebar__link'><img src={menu} alt="Menu" />Каталог</button>
                         <button className='sidebar__link'><img src={cart} alt="Cart" />Корзина</button>
                         <button className='sidebar__link'><img src={profile} alt="Profile" />Профиль</button>
                     </div>

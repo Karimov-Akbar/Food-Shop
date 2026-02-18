@@ -18,7 +18,7 @@ const Menu = () => {
             <header className="header">
                 <div className="header__content">
                     <div className="header__filter">
-                        <h1>Меню</h1>
+                        <h1>Каталог</h1>
                         <button><img src={filter} alt="Filter" />Сортировать по:</button>
                     </div>
                     <div className="header__search">
