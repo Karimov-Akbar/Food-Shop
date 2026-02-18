@@ -39,6 +39,7 @@
     height: 165px;
     border-radius: 30px;
     object-fit: contain;
+    position: relative;
 }
 
 .foodcard__cart{
@@ -79,4 +80,23 @@
     color: #5b5b5e;
     max-width: 290px;
     width: 100%;
+}
+
+.foodcard__rating{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 12px;
+    color: #000;
+    padding: 6px 8px;
+    border-radius: 136px;
+    box-shadow: 0 6px 24px 0 rgba(254, 114, 76, 0.2);
+    background: #fff;
+    position: absolute;
+    top: 150px;
+    left: 15px;
+}
+
+.foodcard__rating img{
+    width: 10px;
+    height: 10px;
 }
