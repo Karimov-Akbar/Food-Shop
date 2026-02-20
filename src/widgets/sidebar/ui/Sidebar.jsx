@@ -4,8 +4,11 @@ import menu from '../../../shared/icons/menu.svg'
 import cart from '../../../shared/icons/cart.svg'
 import profile from '../../../shared/icons/profile.svg'
 import logout from '../../../shared/icons/logout.svg'
+import { useNavigate } from 'react-router-dom'
 
 const Sidebar = () => {
+    const navigate = useNavigate();
+    
     return (
         <>
             <aside className="sidebar">
@@ -16,7 +19,7 @@ const Sidebar = () => {
                         <a className='user__email' href="">akbar@gmail.com</a>
                     </div>
                     <div className="sidebar__links">
-                        <button className='sidebar__link'><img src={menu} alt="Menu" />Каталог</button>
+                        <button className='sidebar__link' onClick={() => navigate("/")}><img src={menu} alt="Menu" />Каталог</button>
                         <button className='sidebar__link'><img src={cart} alt="Cart" />Корзина</button>
                         <button className='sidebar__link'><img src={profile} alt="Profile" />Профиль</button>
                     </div>
