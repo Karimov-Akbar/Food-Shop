@@ -55,11 +55,13 @@ const Menu = () => {
                         <ProductCard key={product.id} product={product} />
                     ))}
                 </section>
-                <Paginaton
-                    totalPages={totalPages}
-                    onPageChange={handlePageChange}
-                    forcePage={currentPage -1}
-                />
+                {totalPages > 1 && (
+                    <Paginaton
+                        totalPages={totalPages}
+                        onPageChange={handlePageChange}
+                        forcePage={currentPage -1}
+                    />
+                )}
             </main>
         </div>
     );
