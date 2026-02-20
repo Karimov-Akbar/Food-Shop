@@ -5,13 +5,33 @@ import './Menu.css'
 import ProductCard from '../../../widgets/productcard/ui/ProductCard'
 import { productsApi } from '../../../shared/api/products'
 import { useEffect, useState } from 'react'
+import Paginaton from '../../../shared/ui/pagination/Pagination'
+import { useSearchParams } from 'react-router-dom'
 
 const Menu = () => {
+    const [searchParams, setSearchParams] = useSearchParams();
     const [products, setProducts] = useState([]);
+    const [totalPages, setTotalPages] = useState(0);
+    const currentPage = Number(searchParams.get('page') || 1);
+    const LIMIT = 30;
     
+    const fetchProducts = (page) => {
+        const skip = (page - 1) * LIMIT;
+        productsApi(LIMIT, skip).then(data => { 
+            setProducts(data.products);
+            setTotalPages(Math.ceil(data.total / LIMIT));
+            window.scrollTo(0,0);
+        });
+    }
+
+
     useEffect(() => {
-        productsApi().then(data => setProducts(data.products));
-    }, []);
+        fetchProducts(currentPage);
+    }, [currentPage]);
+
+    const handlePageChange = (page) =>{
+        setSearchParams({ page: page + 1});
+    }
 
     return(
         <div className='container'>
@@ -35,6 +55,11 @@ const Menu = () => {
                         <ProductCard key={product.id} product={product} />
                     ))}
                 </section>
+                <Paginaton
+                    totalPages={totalPages}
+                    onPageChange={handlePageChange}
+                    forcePage={currentPage -1}
+                />
             </main>
         </div>
     );
