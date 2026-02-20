@@ -5,13 +5,27 @@ import cart from '../../../shared/icons/cart.svg'
 import profile from '../../../shared/icons/profile.svg'
 import logout from '../../../shared/icons/logout.svg'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 
 const Sidebar = () => {
+    const [isOpen, setIsOpen] = useState(false);
     const navigate = useNavigate();
     
     return (
         <>
-            <aside className="sidebar">
+            <button 
+                className='hamburger'
+                onClick={() => setIsOpen(!isOpen)}
+                >
+                ☰
+            </button>
+            {isOpen && (
+                <div
+                    className='overlay'
+                    onClick={()=>setIsOpen(false)}
+                /> 
+            )}
+            <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
                 <div className="sidebar__content">
                     <div className="sidebar__top">
                         <img src={avatar} className='user__avatar' alt="Avatar" />
