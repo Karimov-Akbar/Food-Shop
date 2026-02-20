@@ -4,7 +4,7 @@ import star from '../../../shared/icons/star.svg'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { productId } from '../../../shared/api/products';
-import Loader from '../../../shared/ui/Loader'
+import Loader from '../../../shared/ui//loader/Loader'
 
 const ProductInfo = () => {
     const { id } = useParams();
