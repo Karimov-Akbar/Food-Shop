@@ -3,12 +3,23 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 24px;
     }
+
+    .info__content {
+        gap: 30px;
+    }
 }
 
 @media (max-width: 768px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     .container {
         margin-left: 0;
         padding: 0 16px;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .hamburger {
@@ -20,10 +31,12 @@
     }
 
     .sidebar {
+        width: 260px;
         transform: translateX(-100%);
         transition: transform 0.3s ease;
         z-index: 100;
         background: #fff;
+        padding-top: 70px;
     }
 
     .sidebar.open {
@@ -61,6 +74,30 @@
         height: 32px;
         font-size: 12px;
     }
+
+    .info__content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info__content img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: contain;
+    }
+
+    .product__name {
+        font-size: 24px;
+    }
+
+    .header__content-left {
+        gap: 16px;
+    }
+
+    .info__description {
+        max-width: 100% !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -72,5 +109,14 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
+    }
+
+    .product__name {
+        font-size: 20px;
+    }
+
+    .product__cart {
+        font-size: 14px;
+        padding: 10px 12px;
     }
 }
