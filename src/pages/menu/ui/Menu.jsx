@@ -31,7 +31,7 @@ const Menu = () => {
             setSearchParams({page: 1});
         }, 500);
         return () => clearTimeout(timer);
-    }, [searchQuery]);
+    }, [searchQuery, setSearchParams]);
 
 
     useEffect(() => {
