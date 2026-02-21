@@ -91,11 +91,11 @@
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 12px;
-    color: #000;
+    color: #fff;
     padding: 6px 8px;
     border-radius: 136px;
     box-shadow: 0 6px 24px 0 rgba(254, 114, 76, 0.2);
-    background: #fff;
+    background: #fe724c;
 }
 
 .rating__span img{
