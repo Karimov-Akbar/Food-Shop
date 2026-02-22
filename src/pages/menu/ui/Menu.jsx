@@ -27,6 +27,7 @@ const Menu = () => {
     }
 
     useEffect(()=> {
+        if(!searchQuery.trim()) return;
         const timer = setTimeout(()=>{
             setSearchParams({page: 1});
         }, 500);
